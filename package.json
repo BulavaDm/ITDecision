@@ -1,0 +1,33 @@
+{
+  "name": "post-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel build src/assets/images/* && parcel index.html",
+    "build": "parcel build index.html src/assets/images/*"
+  },
+  "dependencies": {
+    "file-loader": "^6.0.0",
+    "tailwindcss": "^1.4.6",
+    "vue": "^2.6.11",
+    "vue-hot-reload-api": "^2.3.4",
+    "vuedraggable": "^2.23.2",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.0",
+    "@babel/preset-env": "^7.10.0",
+    "@vue/component-compiler-utils": "^3.1.2",
+    "autoprefixer": "^9.8.0",
+    "parcel-bundler": "^1.12.4",
+    "postcss-font-magician": "^2.3.1",
+    "postcss-modules": "^2.0.0",
+    "typescript": "^3.9.3",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
