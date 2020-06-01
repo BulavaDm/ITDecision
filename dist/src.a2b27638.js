@@ -10459,19 +10459,19 @@ var staticRenderFns = [
             "div",
             {
               staticClass:
-                "flex flex-row border-solid border-l border-my-grey-1"
+                "flex flex-row border-solid border-l border-my-grey-2"
             },
             [
               _c("div", { staticClass: "flex flex-col w-12" }, [
                 _c("div", {
                   staticClass:
-                    "flex-grow border-solid border-b border-my-grey-1"
+                    "flex-grow border-solid border-b border-my-grey-2"
                 }),
                 _vm._v(" "),
                 _c("div", { staticClass: "flex-grow" })
               ]),
               _vm._v(" "),
-              _c("span", { staticClass: "text-14 leading-17" }, [
+              _c("span", { staticClass: "text-14 leading-17 ml-5" }, [
                 _vm._v("546 568 ₴")
               ])
             ]
@@ -10481,13 +10481,13 @@ var staticRenderFns = [
             _c("div", { staticClass: "flex flex-col w-12" }, [
               _c("div", {
                 staticClass:
-                  "flex-grow border-solid border-l border-b border-my-grey-1"
+                  "flex-grow border-solid border-l border-b border-my-grey-2"
               }),
               _vm._v(" "),
               _c("div", { staticClass: "flex-grow" })
             ]),
             _vm._v(" "),
-            _c("span", { staticClass: "text-14 leading-17" }, [
+            _c("span", { staticClass: "text-14 leading-17 ml-5" }, [
               _vm._v("8 797 $")
             ]),
             _vm._v(" "),
@@ -10522,7 +10522,7 @@ var staticRenderFns = [
               },
               [
                 _c("span", { staticClass: "opacity-06" }, [
-                  _vm._v("monobank,$")
+                  _vm._v("monobank, $")
                 ]),
                 _vm._v(" "),
                 _c("span", [_vm._v("8 797 $")])
@@ -10621,7 +10621,7 @@ exports.default = _default;
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "bg-my-grey-3" },
+    { staticClass: "bg-my-grey-3 w-312" },
     [
       _c(
         "div",
@@ -19820,22 +19820,26 @@ exports.default = _default;
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "flex justify-center items-center h-920" }, [
-    _c("div", { staticClass: "flex flex-row w-page fixed bg-my-grey-1" }, [
-      _c(
-        "div",
-        { staticClass: "flex w-main-panel pl-36 py-26" },
-        [_c("main-content")],
-        1
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "flex w-user-panel py-26 pr-35 pl-13" },
-        [_c("user-panel")],
-        1
-      )
-    ])
+  return _c("div", { staticClass: "flex justify-center py-36" }, [
+    _c(
+      "div",
+      { staticClass: "flex flex-row w-page fixed bg-my-grey-1 px-36 py-26" },
+      [
+        _c(
+          "div",
+          { staticClass: "flex w-main-panel" },
+          [_c("main-content")],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "flex w-user-panel ml-15" },
+          [_c("user-panel")],
+          1
+        )
+      ]
+    )
   ])
 }
 var staticRenderFns = []
@@ -19984,7 +19988,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52736" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54528" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

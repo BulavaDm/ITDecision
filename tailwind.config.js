@@ -112,6 +112,7 @@ module.exports = {
         '180': '180px',
         '240': '240px',
         '250': '250px',
+        '312': '312px',
         '384': '384px',
         'main-buttons': '66px',
         'user-panel': '360px',

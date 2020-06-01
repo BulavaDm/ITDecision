@@ -16814,6 +16814,10 @@ video {
   width: 250px;
 }
 
+.w-312 {
+  width: 312px;
+}
+
 .w-384 {
   width: 384px;
 }
@@ -19438,6 +19442,7 @@ body {
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.01em;
+  height: 100vh;
   color: #2E2E2E;
   background-color: #E5E5E5
 }
@@ -35636,6 +35641,10 @@ body {
 
   .sm\:w-250 {
     width: 250px;
+  }
+
+  .sm\:w-312 {
+    width: 312px;
   }
 
   .sm\:w-384 {
@@ -54448,6 +54457,10 @@ body {
     width: 250px;
   }
 
+  .md\:w-312 {
+    width: 312px;
+  }
+
   .md\:w-384 {
     width: 384px;
   }
@@ -73258,6 +73271,10 @@ body {
     width: 250px;
   }
 
+  .lg\:w-312 {
+    width: 312px;
+  }
+
   .lg\:w-384 {
     width: 384px;
   }
@@ -92066,6 +92083,10 @@ body {
 
   .xl\:w-250 {
     width: 250px;
+  }
+
+  .xl\:w-312 {
+    width: 312px;
   }
 
   .xl\:w-384 {

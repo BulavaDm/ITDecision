@@ -1,10 +1,10 @@
 <template>
-<div class="flex justify-center items-center h-920">
-  <div class="flex flex-row w-page fixed bg-my-grey-1">
-    <div class="flex w-main-panel pl-36 py-26">
+<div class="flex justify-center py-36">
+  <div class="flex flex-row w-page fixed bg-my-grey-1 px-36 py-26">
+    <div class="flex w-main-panel">
       <main-content></main-content>
     </div>
-    <div class="flex w-user-panel py-26 pr-35 pl-13">
+    <div class="flex w-user-panel ml-15">
       <user-panel></user-panel>
     </div>
   </div>
