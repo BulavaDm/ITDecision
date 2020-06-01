@@ -13,27 +13,27 @@ const store = new Vuex.Store({
     userActions: [
       {
         title: 'Операции',
-        icon: 'src/assets/images/operation_icon.svg'
+        icon: 'operation_icon.svg'
       },
       {
         title: 'Отчеты',
-        icon: 'src/assets/images/reports_icon.svg'
+        icon: 'reports_icon.svg'
       },
       {
         title: 'Контрагенты',
-        icon: 'src/assets/images/contragents_icon.svg'
+        icon: 'contragents_icon.svg'
       },
       {
         title: 'Проекты',
-        icon: 'src/assets/images/work_icon.svg'
+        icon: 'work_icon.svg'
       },  
       {
         title: 'Статьи расходов',
-        icon: 'src/assets/images/accounts_icon.svg'
+        icon: 'accounts_icon.svg'
       }, 
       {
         title: 'Сотрудники',
-        icon: 'src/assets/images/person_icon.svg'
+        icon: 'person_icon.svg'
       }, 
     ],
     transactionsData: [
@@ -44,7 +44,7 @@ const store = new Vuex.Store({
           {
             id: 0,
             payer: 'ИП Бирюков Михаил Алексеевич',
-            billDescription: 'Со счёта: monobank',
+            billDescription: 'monobank',
             payee: 'Сайт Volkswagen',
             serviceDescription: 'Продвижение',
             fullDescription: 'Оплата за продвижение Google Adwords июнь-июль',
@@ -55,7 +55,7 @@ const store = new Vuex.Store({
           {
             id: 1,
             payer: 'Роман Мельников',
-            billDescription: 'Со счёта: monobank',
+            billDescription: 'monobank',
             payee: 'ИП Eltron',
             serviceDescription: 'Зарплата сотрудникам',
             fullDescription: 'Аванс июль',
@@ -66,7 +66,7 @@ const store = new Vuex.Store({
           {
             id: 2,
             payer: 'ООО "Кранкомплект"',
-            billDescription: 'Со счёта: monobank',
+            billDescription: 'monobank',
             payee: 'Сайт Кранкомплект',
             serviceDescription: 'Разработка',
             fullDescription: 'Аванс за разработку',
@@ -83,7 +83,7 @@ const store = new Vuex.Store({
           {
             id: 0,
             payer: 'Роман Мельников',
-            billDescription: 'Со счёта: monobank',
+            billDescription: 'monobank',
             payee: 'Обучение сотрудников',
             serviceDescription: 'Расходы на офис',
             fullDescription: 'Оплата обучения',
@@ -94,31 +94,47 @@ const store = new Vuex.Store({
           {
             id: 1,
             payer: 'ООО "Кранкомплект"',
-            billDescription: 'Со счёта: monobank',
+            billDescription: 'monobank',
             payee: 'Сайт Кранкомплект',
             serviceDescription: 'Разработка',
             fullDescription: 'Аванс за разработку',
             paymentStatus: 'Оплачено',
             amount: '+170 000₴',
             amountStatus: true
-          },
-          //{
-          //  id: 2,
-          //  payer: 'ИП Бирюков Михаил Алексеевич',
-          //  billDescription: 'Со счёта: monobank',
-          //  payee: 'Сайт Volkswagen',
-          //  serviceDescription: 'Продвижение',
-          //  fullDescription: 'Оплата за продвижение Google Adwords июнь-июль',
-          //  paymentStatus: 'Оплачено',
-          //  amount: '+21 239₴',
-          //  amountStatus: true
-          //},
+          }
         ]
       },
-    ]
-  },
-  mutations: {
-    
+    ],
+    usersList: [
+      {
+        id: 0,
+        avatar: 'photo_0.svg',
+        abbr: 'ДК',
+        showAbbr: true,
+        favorite: true
+      },
+      {
+        id: 1,
+        avatar: 'photo_1.svg',
+        abbr: '',
+        showAbbr: false,
+        favorite: true
+      },
+      {
+        id: 2,
+        avatar: 'photo_2.svg',
+        abbr: '',
+        showAbbr: false,
+        favorite: true
+      },
+      {
+        id: 3,
+        avatar: 'photo_3.svg',
+        abbr: '',
+        showAbbr: false,
+        favorite: true
+      },
+    ],
   },
   getters: {
     getterUserCard: state => {
@@ -131,6 +147,10 @@ const store = new Vuex.Store({
 
     getterTransactionsData: state => {
       return state.transactionsData;
+    },
+
+    getterUsersList: state => {
+      return state.usersList;
     },
   } 
 });
